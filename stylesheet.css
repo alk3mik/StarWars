@@ -86,6 +86,21 @@ p {
     transform: translate(-50%, -80%) perspective(200px) rotateX(25deg);
 }
 
+#crawlContainer p {
+    animation: scroll-top 20s linear infinite;
+}
+
+/* Define the animation */
+
+@keyframes scroll-top {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
 #doorA {
     margin: 0;
     position: absolute;
